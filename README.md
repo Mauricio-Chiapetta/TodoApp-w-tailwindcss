@@ -4,7 +4,7 @@ Este é um projeto simples de lista de tarefas (TodoList) desenvolvido com React
 ## 🎨 Inspiração no Figma Community
 Este projeto foi baseado no design disponível na Figma Community. Você pode visualizar o design original no seguinte link:
 
-<a>https://www.figma.com/design/xDgHwcWgqYcY802jMheHYQ/ToDo-List-%F0%9F%91%85-(Community)?node-id=0-1&node-type=CANVAS&t=WWHHVO5jLNOlikMu-0</a>
+<a target="_blank">https://www.figma.com/design/xDgHwcWgqYcY802jMheHYQ/ToDo-List-%F0%9F%91%85-(Community)?node-id=0-1&node-type=CANVAS&t=WWHHVO5jLNOlikMu-0</a>
 
 ## 🚀 Tecnologias Utilizadas
 <ul>
@@ -14,3 +14,5 @@ Este projeto foi baseado no design disponível na Figma Community. Você pode vi
 </ul>
 
 
+### link : 
+<a target="_blank">https://todo-app-w-tailwindcss.vercel.app/</a>
