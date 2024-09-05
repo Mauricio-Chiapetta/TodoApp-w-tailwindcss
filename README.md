@@ -6,7 +6,7 @@ Este projeto foi baseado no design disponível na Figma Community. Você pode vi
 
 <a>https://www.figma.com/design/xDgHwcWgqYcY802jMheHYQ/ToDo-List-%F0%9F%91%85-(Community)?node-id=0-1&node-type=CANVAS&t=WWHHVO5jLNOlikMu-0</a>
 
-🚀 Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 React: Biblioteca JavaScript para criação de interfaces de usuário.
 Vite: Ferramenta de build rápida e leve para projetos modernos de frontend.
 Tailwind CSS: Framework CSS utilitário que facilita a criação de designs responsivos e customizáveis.
