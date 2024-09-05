@@ -1,8 +1,12 @@
-# React + Vite
+# TodoList - React, Vite, Tailwind
+Este é um projeto simples de lista de tarefas (TodoList) desenvolvido com React, Vite e estilizado com Tailwind CSS. O design é inspirado em um modelo encontrado na Figma Community, proporcionando uma interface moderna e intuitiva.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🎨 Inspiração no Figma Community
+Este projeto foi baseado no design disponível na Figma Community. Você pode visualizar o design original no seguinte link:
 
-Currently, two official plugins are available:
+<a>https://www.figma.com/design/xDgHwcWgqYcY802jMheHYQ/ToDo-List-%F0%9F%91%85-(Community)?node-id=0-1&node-type=CANVAS&t=WWHHVO5jLNOlikMu-0</a>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Tecnologias Utilizadas
+React: Biblioteca JavaScript para criação de interfaces de usuário.
+Vite: Ferramenta de build rápida e leve para projetos modernos de frontend.
+Tailwind CSS: Framework CSS utilitário que facilita a criação de designs responsivos e customizáveis.
