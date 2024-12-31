@@ -36,7 +36,7 @@ function App() {
         <Form addTodos={addTodos} />
       </div>
 
-      <div className="flex  justify-between items-center mt-9 sm:px-96 px-4 mb-5">
+      <div className="flex  justify-between items-center mt-16 sm:px-96 px-4 mb-5">
         <h1 className="text-sky-400 font-bold">
           Tarefas Criadas{" "}
           <span className="text-white bg-zinc-700 px-3 py-1 rounded-full font-medium">
