@@ -6,25 +6,46 @@ import { faClipboard } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(() => {
+    const storedItems = localStorage.getItem("todoApp");
+    if (!storedItems) {
+      return [];
+    }
+    const items = JSON.parse(storedItems);
+    return items;
+  });
 
   const addTodos = (task) => {
-    const id = Math.floor(Math.random() * 1000000);
-    const newTodo = { id, task, completed: false };
-    setTodos((state) => [...state, newTodo]);
+    setTodos((state) => {
+      const id = Math.floor(Math.random() * 1000000);
+      const newTodo = { id, task, completed: false };
+      const updatedItems = [...state, newTodo];
+      localStorage.setItem("todoApp", JSON.stringify(updatedItems));
+      return updatedItems;
+    });
   };
 
   const removeTodo = (id) => {
-    setTodos((state) => state.filter((e) => e.id !== id));
+    setTodos((state) => {
+      const updatedItems = state.filter((i) => i.id !== id);
+      localStorage.setItem("todoApp", JSON.stringify(updatedItems));
+      return updatedItems;
+    });
+    // const updatedItems = setTodos((state) => state.filter((e) => e.id !== id));
+    // localStorage.setItem("todoApp", JSON.stringify(updatedItems));
+    // return updatedItems;
   };
 
   const toggleComplete = (id) => {
-    setTodos((state) =>
-      state.map((todo) =>
+    setTodos((state) => {
+      const updatedItems = state.map((todo) =>
         todo.id === id ? { ...todo, completed: !todo.completed } : todo
-      )
-    );
+      );
+      localStorage.setItem("todoApp", JSON.stringify(updatedItems));
+      return updatedItems;
+    });
   };
+
 
   const completedTodos = todos.length;
   const checkedTodos = todos.filter((todo) => todo.completed).length;
