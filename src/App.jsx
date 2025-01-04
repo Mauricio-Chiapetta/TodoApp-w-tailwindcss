@@ -46,6 +46,16 @@ function App() {
     });
   };
 
+  const updateTodo = (id,newAttributes) =>{
+    setTodos((state)=>{
+      const itemIndex = state.findIndex((i) => i.id === id)
+      const updatedItems = [...state]
+      Object.assign(updatedItems[itemIndex],newAttributes)
+      localStorage.setItem("todoApp",JSON.stringify(updatedItems))
+      return updatedItems
+    })
+  }
+
 
   const completedTodos = todos.length;
   const checkedTodos = todos.filter((todo) => todo.completed).length;
@@ -84,6 +94,7 @@ function App() {
               key={todo.id}
               removeTodo={removeTodo}
               toggleComplete={toggleComplete}
+              updateTodo={updateTodo}
             />
           ))
         ) : (
